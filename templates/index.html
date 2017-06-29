@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>C4E10's corners</title>
+</head>
+<body>
+
+{#Jinja 2#}
+
+{#<h1>Hãy cho tôi một cái hốc !!! Tôi sẽ cân cả bản đồ</h1>#}
+{#<h2>Vladimir Putin</h2>#}
+{#<p>Khi mà mọi thứ đang đi dưới chân tôi</p>#}
+{#<p>Mông lung như một trò đùa</p>#}
+{##}
+{#<img src="https://ae01.alicdn.com/kf/HTB1LhWcNXXXXXaLXVXXq6xXFXXX8/Canvas-Prints-Stretched-Framed-Fine-Art-Giclee-Artwork-For-Wall-Decor-Sunrise-Dust-Waves-Horizon-font.jpg">#}
+{#<a href="https://www.google.com.vn"> Hãy thịt em đi</a>#}
+{##}
+{#<a href="{{ url_for("about") }}">Hãy xem em đi</a>#}
+{#<a href="{{ url_for("add", a=4, b=5) }}">Bốn cộng năm bằng</a>#}
+
+{% for flower in flowers %}
+
+    <img src="{{ flower.image }}" alt="">
+    <h3>{{ flower.title }}</h3>
+    <p>{{ flower.price }}</p>
+{% endfor %}
+
+</body>
+</html>
